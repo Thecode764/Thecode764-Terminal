@@ -2,7 +2,7 @@ let history = []
 let theme_for_terminal = "dark"
 $('body').terminal({
     help: function () { 
-        this.echo('<h1 style="color:red;">© 2024 Thecode764 Portfolio Website</h1><p style="color:yellowgreen;">Welcome to Thecode764 terminal portfolio<br>Here is <b>Help section</b></p><br><p style="color:blue;">pwd: Show the dir<br>socials: My social media<br>neofetch: The neofetch command<br>clear: Clear the screen<br>reboot: Restart the terminal<br>whoami: The whoami command<br>about: About me<br>history: Command history<br>search: Search in google for space use %20<br>poweroff: Power off this terminal<br>echo: Print text<br>themeset --help: Set a theme for terminal</p>', { typing: true, delay: 30, raw:true });
+        this.echo('<h1 style="color:red;">© 2024 Thecode764 Portfolio Website</h1><p style="color:yellowgreen;">Welcome to Thecode764 terminal portfolio<br>Here is <b>Help section</b></p><br><p style="color:blue;">pwd: Show the dir<br>socials: My social media<br>neofetch: The neofetch command<br>clear: Clear the screen<br>reboot: Restart the terminal<br>whoami: The whoami command<br>about: About me<br>history: Command history<br>search: Search in google for space use %20<br>poweroff: Power off this terminal<br>echo: Print text<br>themeset --help: Set a theme for terminal<br>snk: Snake game for my github profile</p>', { typing: true, delay: 30, raw:true });
         history.push("help")
     }, 
     pwd: function () {
@@ -92,6 +92,13 @@ $('body').terminal({
             this.echo(`<h1 style="color:red;">Theme not found! 🔇</h1>`,{raw:true})
             history.push(`themeset ${theme}`)
         }
+    },
+    snk: function () {
+        this.echo(`<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kian-ahmadian/kian-ahmadian/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kian-ahmadian/kian-ahmadian/output/github-contribution-grid-snake.svg">
+  <img alt="Kian Ahmadian contribution" src="https://raw.githubusercontent.com/kian-ahmadian/kian-ahmadian/output/github-contribution-grid-snake.svg">
+</picture>`, {raw:true})
     }
 }, { 
     greetings: '<h1 style="color:red;">Welcome to Thecode764 Portfolio website</h1><p style="color:yellowgreen;">The three version of my website was created in 2024 for best design this terminal created with jquery.terminal type "help" for start 🔍️</p><p style="color:red;">⚡️ Wait for command output please! i used writer effects</p><p style="color:blue;">The terminal is fast ⚡️</p><p style="color:orange;">✅ Have auto complete with TAB</p>',
