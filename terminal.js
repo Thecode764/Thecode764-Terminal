@@ -99,6 +99,7 @@ $('body').terminal({
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kian-ahmadian/kian-ahmadian/output/github-contribution-grid-snake.svg">
   <img alt="Kian Ahmadian contribution" src="https://raw.githubusercontent.com/kian-ahmadian/kian-ahmadian/output/github-contribution-grid-snake.svg">
 </picture>`, {raw:true})
+        history.push("snk")
     }
 }, { 
     greetings: '<h1 style="color:red;">Welcome to Thecode764 Portfolio website</h1><p style="color:yellowgreen;">The three version of my website was created in 2024 for best design this terminal created with jquery.terminal type "help" for start 🔍️</p><p style="color:red;">⚡️ Wait for command output please! i used writer effects</p><p style="color:blue;">The terminal is fast ⚡️</p><p style="color:orange;">✅ Have auto complete with TAB</p>',
